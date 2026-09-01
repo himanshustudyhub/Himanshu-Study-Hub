@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Himanshu Study Hub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav class="nav">
+    <div class="logo">📚 Himanshu Study Hub</div>
+    <button class="menu" onclick="toggleMenu()">☰</button>
+    <div id="navlinks" class="navlinks">
+      <a href="#home">Home</a>
+      <a href="#notes">Notes</a>
+      <a href="#quiz">Quiz</a>
+      <a href="#about">About Me</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div>
+    <p class="tag">WELCOME TO MY STUDY WEBSITE</p>
+    <h1>पढ़ाई को बनाओ <span>आसान और Interesting!</span> 🚀</h1>
+    <p class="lead">Notes, Reasoning, Biology और practice quizzes — सब एक जगह।</p>
+    <a class="btn" href="#notes">Notes देखें →</a>
+  </div>
+</section>
+
+<section id="notes" class="section">
+  <p class="eyebrow">STUDY MATERIAL</p>
+  <h2>📚 My Notes</h2>
+  <div class="cards">
+    <article class="card">
+      <div class="icon">🧬</div><h3>Biology</h3>
+      <p>Chapter-wise notes और important points.</p>
+      <button onclick="showMessage('Biology Notes')">Open Notes</button>
+    </article>
+    <article class="card">
+      <div class="icon">🧠</div><h3>Reasoning</h3>
+      <p>Blood Relation, Direction, Alphabet Test और more.</p>
+      <button onclick="showMessage('Reasoning Notes')">Open Notes</button>
+    </article>
+    <article class="card">
+      <div class="icon">📝</div><h3>Important Questions</h3>
+      <p>Exam practice के लिए selected questions.</p>
+      <button onclick="showMessage('Important Questions')">Open Questions</button>
+    </article>
+  </div>
+  <div class="upload-box">
+    <h3>📎 बाद में अपने PDF/Notes यहाँ जोड़ें</h3>
+    <p>इस template में आप अपनी notes files के links आसानी से जोड़ सकते हो।</p>
+  </div>
+</section>
+
+<section id="quiz" class="section alt">
+  <p class="eyebrow">PRACTICE</p>
+  <h2>🧠 Quick Quiz</h2>
+  <div class="quiz">
+    <h3 id="question">भारत की राजधानी क्या है?</h3>
+    <div id="answers" class="answers">
+      <button onclick="answer(this, false)">मुंबई</button>
+      <button onclick="answer(this, true)">नई दिल्ली</button>
+      <button onclick="answer(this, false)">लखनऊ</button>
+      <button onclick="answer(this, false)">जयपुर</button>
+    </div>
+    <p id="result"></p>
+    <button class="next" onclick="resetQuiz()">फिर से प्रयास करें</button>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <p class="eyebrow">ABOUT</p>
+  <h2>👨‍🎓 मेरे बारे में</h2>
+  <div class="about">
+    <div class="avatar">H</div>
+    <div>
+      <h3>Hi, मैं Himanshu हूँ।</h3>
+      <p>मैं एक student हूँ और पढ़ाई से जुड़े Notes, Reasoning Questions और useful study material share करना पसंद करता हूँ। मेरा उद्देश्य students के लिए पढ़ाई को आसान और interesting बनाना है।</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section alt">
+  <p class="eyebrow">CONTACT</p>
+  <h2>📩 Contact Me</h2>
+  <div class="contact-card">
+    <p>Website पर अपना email या social link बाद में यहाँ जोड़ सकते हो।</p>
+    <button onclick="showMessage('Contact section')">Contact जोड़ें</button>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>© 2026 Himanshu Study Hub • Made for learning 📖</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
